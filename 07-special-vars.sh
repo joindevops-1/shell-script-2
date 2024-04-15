@@ -6,7 +6,6 @@ echo "Script name: $0"
 echo "Process ID of the current shell: $$"
 sleep 2000 &
 echo "Process ID of the last background command: $!"
-echo "Process ID of the current shell: $"
 echo "Current working directory: $PWD"
 echo "home directory of the user: $HOME"
 echo "Current user: $USER"
