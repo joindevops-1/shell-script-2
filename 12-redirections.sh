@@ -4,14 +4,17 @@ USERID=$(id -u)
 DATE=$(date +%F-%M-%S)
 LOGFILE=$(echo 11-functions.sh | cut -d "." -f1)
 LOG=/tmp/$LOGFILE-$DATE.log
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "$2...FAILURE"
+        echo -e "$2...$R FAILURE $N"
         exit 1
     else
-        echo "$2...SUCCESS"
+        echo -e "$2...$G SUCCESS $N"
     fi
 }
 
