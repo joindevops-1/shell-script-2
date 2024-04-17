@@ -23,8 +23,8 @@ else
     echo "You are super user."
 fi
 
-dnf install mysql -y & >> $LOG
+dnf install mysql -y &>> $LOG
 VALIDATE $? "MySQL installation"
 
-dnf install git -y & >> $LOG
+dnf install git -y &>> $LOG
 VALIDATE $? "Git installation"
