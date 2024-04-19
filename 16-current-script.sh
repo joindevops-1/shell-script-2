@@ -1,7 +1,7 @@
-#/bin/bash
+source 15-other-script.sh
 
 COURSE=DevOps
-source 15-other-script.sh
+
 
 #./15-other-script.sh
 
