@@ -1,7 +1,8 @@
 #/bin/bash
 
 COURSE=DevOps
+source 15-other-script.sh
 
-./15-other-script.sh
+#./15-other-script.sh
 
-echo "Course: $COURSE"
+echo "Course from current script: $COURSE"

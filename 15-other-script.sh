@@ -2,4 +2,4 @@
 
 COURSE="DevOps with AWS"
 
-echo "Course: $COURSE"
+echo "Course from other script: $COURSE"
