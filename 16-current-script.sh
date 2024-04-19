@@ -3,7 +3,7 @@
 COURSE=DevOps
 pwd
 ls -l 15-other-script.sh
-source 15-other-script.sh
+source ./15-other-script.sh
 
 #./15-other-script.sh
 
