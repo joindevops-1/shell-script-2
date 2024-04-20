@@ -1,11 +1,12 @@
 #/bin/bash
 
-COURSE=DevOps
-echo "PID from current script: $$"
-pwd
-ls -l 15-other-script.sh
-#source ./15-other-script.sh
+COURSE="DevOps"
+echo "Course before calling other script: $COURSE"
+echo "PID from current script before calling other script: $$"
 
 ./15-other-script.sh
 
-echo "Course from current script: $COURSE"
+#source ./15-other-script.sh
+
+echo "Course After calling other script: $COURSE"
+echo "PID from current script After calling other script: $$"
