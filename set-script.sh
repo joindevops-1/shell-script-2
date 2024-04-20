@@ -1,5 +1,8 @@
 #!/bin/bash
 set -e
+LOG=/tmp/script.log
+DATE=$(date)
+echo "Script started executing at: $DATE" &>>$LOG
 handle_error() {
     echo "Error occurred on line $1: $2"
     exit 1
@@ -18,5 +21,6 @@ else
     echo "You are super user."
 fi
 
-dnf install mysqsl -y
-dnf install git -y
+dnf install mysql -y &>>$LOG
+dnf install git -y &>>$LOG
+dnf install someee -y &>>$LOG
