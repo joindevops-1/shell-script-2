@@ -15,5 +15,5 @@ N="\e[0m"
 
 while IFS=":" read -r username password
 do
-    echo "$username"
+    echo "$password"
 done < $file
