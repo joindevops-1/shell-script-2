@@ -13,7 +13,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-while IFS=":" read -r username
+while IFS=":" read -r username password
 do
     echo "$username"
 done < $file
