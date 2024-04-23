@@ -4,7 +4,7 @@ LOG=/tmp/script.log
 DATE=$(date)
 echo "Script started executing at: $DATE" &>>$LOG
 handle_error() {
-    echo "Error occurred on line $1: $2"
+    echo "Error occurred on line $1: $2" &>>$LOG
     exit 1
 }
 
