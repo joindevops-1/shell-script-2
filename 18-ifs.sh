@@ -10,4 +10,4 @@ N="\e[0m"
 while IFS= read -r line
 do
     echo "$line"
-done <<< /etc/passwd
+done < /etc/passwd
